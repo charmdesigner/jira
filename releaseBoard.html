@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+  <title>Test Management Tool</title>
+  <!-- css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    rel="stylesheet" />
+  <link href="css/slick.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="release_bar">
+    <div class="release_left">
+      <p>Release RL-35</p>
+      <h3>Label Free Release 2.0 UAT</h3>
+    </div>
+    <div class="release_right">
+      <p>Last updoted on 09/30/2022 ot &:02:03 AM by srv_qtestadmin Generic</p>
+      <button type="button" class="blue-btn">RELOAD</button>
+    </div>
+  </div>
+  <div class="release-tabs">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="statistics-tab" data-bs-toggle="tab" data-bs-target="#statistics"
+          type="button" role="tab" aria-controls="statistics" aria-selected="true">Statistics</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="properties-tab" data-bs-toggle="tab" data-bs-target="#properties" type="button"
+          role="tab" aria-controls="properties" aria-selected="false">Properties</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="defect-tab" data-bs-toggle="tab" data-bs-target="#defect" type="button" role="tab"
+          aria-controls="defect" aria-selected="false">Defect Summary (32)</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="execution-tab" data-bs-toggle="tab" data-bs-target="#execution" type="button"
+          role="tab" aria-controls="execution" aria-selected="false">Execution Summary</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
+        <div class="release_box_bar">
+          <div class="release-box">
+            <h2>114</h2>
+            <p>Test Runs</p>
+          </div>
+          <div class="release-box">
+            <h2><strong>114**</strong></h2>
+            <p>Executed</p>
+          </div>
+          <div class="release-box">
+            <h2>))</h2>
+            <p>Unexecuted</p>
+          </div>
+          <div class="release-box success-box">
+            <div class="success-bar">
+              <p>3 <span>2</span></p>
+            </div>
+            <p>Passed Falled Incomplete BIocked O NOT APPLICABLE C DEFERRED</p>
+          </div>
+        </div>
+        <div class="release_box_bar add_export_bar">
+          <div class="d-flex">
+            <div class="release-box">
+              <p>Status: All</p>
+            </div>
+            <div class="release-box">
+              <button type="button" class="status-icon"><img src="images/add-status-icon.jpg" alt="" /></button>
+              <p>#ROWS:</p>
+            </div>
+          </div>
+          <div class="release_right">
+            <button type="button" class="blue-btn">ADD</button>
+            <button type="button" class="blue-btn">EXPORT</button>
+          </div>
+        </div>
+        <div class="d-md-flex align-items-start">
+          <div class="table-responsive release-table">
+            <table class="table" id="dtBasicExample" cellspacing="0" width="100%">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck1">
+                      <label class="form-check-label" for="autoSizingCheck1">
+                      </label>
+                    </div>
+                  </th>
+                  <th scope="col">NAME</th>
+                  <th scope="col">STATUS</th>
+                  <th scope="col">TEST CASE VERSION</th>
+                  <th scope="col">ASSIGNED TO</th>
+                  <th scope="col">EXECUTED START</th>
+                  <th scope="col">EXECUTED END</th>
+                  <th scope="col">PLANNED START DATE</th>
+                  <th scope="col">PLANNED END DATE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                      <label class="form-check-label" for="autoSizingCheck2">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Tco53_pcvs label print attempt - LLiD link ed to more than one shipment</td>
+                  <td class="gr">Passed</td>
+                  <td>1.0</td>
+                  <td>srv_qtestadmin Gen</td>
+                  <td>12/14/2021 0:58:00 PM</td>
+                  <td>12/14/2021 1:58:00 PM</td>
+                  <td>11/29/2021</td>
+                  <td>12/17/2021</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck3">
+                      <label class="form-check-label" for="autoSizingCheck3">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Tco53_pcvs label print attempt - LLiD link ed to more than one shipment</td>
+                  <td class="gr">Passed</td>
+                  <td>1.0</td>
+                  <td>srv_qtestadmin Gen</td>
+                  <td>12/14/2021 0:58:00 PM</td>
+                  <td>12/14/2021 1:58:00 PM</td>
+                  <td>11/29/2021</td>
+                  <td>12/17/2021</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck4">
+                      <label class="form-check-label" for="autoSizingCheck4">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Tco53_pcvs label print attempt - LLiD link ed to more than one shipment</td>
+                  <td class="rd">Failed</td>
+                  <td>1.0</td>
+                  <td>srv_qtestadmin Gen</td>
+                  <td>12/14/2021 0:58:00 PM</td>
+                  <td>12/14/2021 1:58:00 PM</td>
+                  <td>11/29/2021</td>
+                  <td>12/17/2021</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck5">
+                      <label class="form-check-label" for="autoSizingCheck5">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Tco53_pcvs label print attempt - LLiD link ed to more than one shipment</td>
+                  <td class="gr">Passed</td>
+                  <td>1.0</td>
+                  <td>srv_qtestadmin Gen</td>
+                  <td>12/14/2021 0:58:00 PM</td>
+                  <td>12/14/2021 1:58:00 PM</td>
+                  <td>11/29/2021</td>
+                  <td>12/17/2021</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck6">
+                      <label class="form-check-label" for="autoSizingCheck6">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Tco53_pcvs label print attempt - LLiD link ed to more than one shipment</td>
+                  <td class="gr">Passed</td>
+                  <td>1.0</td>
+                  <td>srv_qtestadmin Gen</td>
+                  <td>12/14/2021 0:58:00 PM</td>
+                  <td>12/14/2021 1:58:00 PM</td>
+                  <td>11/29/2021</td>
+                  <td>12/17/2021</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck7">
+                      <label class="form-check-label" for="autoSizingCheck7">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Tco53_pcvs label print attempt - LLiD link ed to more than one shipment</td>
+                  <td class="gr">Passed</td>
+                  <td>1.0</td>
+                  <td>srv_qtestadmin Gen</td>
+                  <td>12/14/2021 0:58:00 PM</td>
+                  <td>12/14/2021 1:58:00 PM</td>
+                  <td>11/29/2021</td>
+                  <td>12/17/2021</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck8">
+                      <label class="form-check-label" for="autoSizingCheck8">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Tco53_pcvs label print attempt - LLiD link ed to more than one shipment</td>
+                  <td class="gr">Passed</td>
+                  <td>1.0</td>
+                  <td>srv_qtestadmin Gen</td>
+                  <td>12/14/2021 0:58:00 PM</td>
+                  <td>12/14/2021 1:58:00 PM</td>
+                  <td>11/29/2021</td>
+                  <td>12/17/2021</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck9">
+                      <label class="form-check-label" for="autoSizingCheck9">
+                      </label>
+                    </div>
+                  </td>
+                  <td>Tco53_pcvs label print attempt - LLiD link ed to more than one shipment</td>
+                  <td class="gr">Passed</td>
+                  <td>1.0</td>
+                  <td>srv_qtestadmin Gen</td>
+                  <td>12/14/2021 0:58:00 PM</td>
+                  <td>12/14/2021 1:58:00 PM</td>
+                  <td>11/29/2021</td>
+                  <td>12/17/2021</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="req-section">
+            <div class="req-header">
+              <img src="images/bug-1.jpg" alt="" />
+              <p>REQUIREMENTS</p>
+            </div>
+            <p class="msg mb-140">RQ-405LABELLESS-3444 DCVS ttempt to print labelfromLLID linked to two PIDs</p>
+            <div class="req-list">
+              <img src="images/bug-2.jpg" alt="" />
+              <input type="text"
+                placeholder="RQ-425 LABELLESs-3423 ODD - CNOFL-CCGWF event not generated desplte SMS template not set up">
+            </div>
+            <div class="req-list">
+              <div> 0</div>
+              <p class="msg ms-2">RQ-417 LABELLESs-3431 POS LIte - 2 eRecelpt emalls sent When phone number Was updated
+              </p>
+            </div>
+            <div class="req-list">
+              <div>A</div>
+              <p class="msg ms-2">RQ-398 LABELLESS-3451 ESB / Sherloc - CNOFL-ERSPF event not VIsIble In Sherloc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="properties" role="tabpanel" aria-labelledby="properties-tab">Properties Secttion
+      </div>
+      <div class="tab-pane fade" id="defect" role="tabpanel" aria-labelledby="defect-tab">Defect Summary Section</div>
+      <div class="tab-pane fade" id="execution" role="tabpanel" aria-labelledby="execution-tab">Execution Summary
+        Section
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- JavaScript -->
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ckeditor.js"></script>
+  <script type="text/javascript">
+
+    ClassicEditor.create(document.querySelector("#editor"), {
+      toolbar: ['bold', 'italic', 'link', 'heading', 'numberedList', 'bulletedList']
+
+    })
+      .then((editor) => {
+        window.editor = editor;
+      })
+      .catch((err) => {
+        console.error(err.stack);
+      });
+
+    ///////////////////////////////////////
+
+    $(document).ready(function () {
+      $(".hamburger-menu").click(function () {
+        $(".sidebar").toggleClass("active", 5000);
+        $(".hamburger-menu").toggleClass("close", 5000);
+      });
+    });
+  </script>
+</body>
+
+</html>
